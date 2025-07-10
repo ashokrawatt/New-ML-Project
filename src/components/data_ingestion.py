@@ -27,7 +27,6 @@ class DataIngestion:
             reviews_df=pd.read_csv('notebook\googleplaystore_user_reviews.csv')
             playstore_df=pd.read_csv('notebook\googleplaystore.csv')
             df =pd.merge(reviews_df, playstore_df, on='App', how='inner')
-            
             logging.info('read the dataset as dataframe')
             
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path),exist_ok=True)
