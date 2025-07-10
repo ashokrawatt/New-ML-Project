@@ -15,10 +15,13 @@ def get_requirements(file_path:str) -> list[str]:
 
 setup(
     
-    name ="cricket_shot_predictor",
+    name ="sentiment_analysis",
     version = '0.0.1',
     author = 'Ashok',
     author_email = 'rwtashok2000@gmail.com',
     packages = find_packages(),
     install_requires = get_requirements('requirements.txt')
 )
+
+
+
